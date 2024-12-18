@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -84,7 +84,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -100,18 +100,17 @@
               "RelativeToolTip": "Controllers\\TeamsController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAADwvzwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:47:10.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T08:47:10.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TourneyController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TourneyController.cs",
               "RelativeDocumentMoniker": "Controllers\\TourneyController.cs",
               "ToolTip": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TourneyController.cs",
               "RelativeToolTip": "Controllers\\TourneyController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAADwv40AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAowJoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T21:18:15.892Z",
               "EditorCaption": ""
@@ -130,13 +129,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MatchController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\MatchController.cs",
               "RelativeDocumentMoniker": "Controllers\\MatchController.cs",
               "ToolTip": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\MatchController.cs",
               "RelativeToolTip": "Controllers\\MatchController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvzQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvzwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T08:58:43.873Z",
               "EditorCaption": ""

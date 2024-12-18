@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using VoetbalTournamentAPI.Data;
 using VoetbalTournamentAPI.Model;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace VoetbalTournamentAPI.Controllers
 {
@@ -19,14 +20,20 @@ namespace VoetbalTournamentAPI.Controllers
         [HttpGet]
         public IActionResult GetAllMatches()
         {
-            var matches = _context.Matches.ToList();
+            var matches = _context.Matches
+                .Include(m => m.Team1)
+                .Include(m => m.Team2)
+                .ToList();
             return Ok(matches);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetMatchById(int id)
         {
-            var match = _context.Matches.FirstOrDefault(m => m.Id == id);
+            var match = _context.Matches
+                .Include(m => m.Team1)
+                .Include(m => m.Team2)
+                .FirstOrDefault(m => m.Id == id);
             if (match == null)
             {
                 return NotFound();
@@ -50,3 +57,4 @@ namespace VoetbalTournamentAPI.Controllers
         }
     }
 }
+

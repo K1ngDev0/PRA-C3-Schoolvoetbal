@@ -4,6 +4,7 @@ using VoetbalTournamentAPI.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace VoetbalTournamentAPI.Controllers
 {
@@ -21,14 +22,14 @@ namespace VoetbalTournamentAPI.Controllers
         [HttpGet]
         public IActionResult GetAllTourneys()
         {
-            var tourneys = _context.Tourney.ToList();
+            var tourneys = _context.Tourney.Include(t => t.Matches).ToList();
             return Ok(tourneys);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetTourneyById(int id)
         {
-            var tourney = _context.Tourney.FirstOrDefault(t => t.Id == id);
+            var tourney = _context.Tourney.Include(t => t.Matches).FirstOrDefault(t => t.Id == id);
             if (tourney == null)
             {
                 return NotFound();
@@ -47,8 +48,17 @@ namespace VoetbalTournamentAPI.Controllers
             _context.Tourney.Add(newTourney);
             _context.SaveChanges();
 
-            GenerateMatches(newTourney);
-            _context.SaveChanges();
+            try
+            {
+                GenerateMatches(newTourney);
+                _context.SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                // Log the exception details
+                Console.WriteLine(ex.InnerException?.Message);
+                return StatusCode(500, "An error occurred while generating matches. Please check the inner exception for details.");
+            }
 
             return CreatedAtAction(nameof(GetTourneyById), new { id = newTourney.Id }, newTourney);
         }
@@ -72,12 +82,14 @@ namespace VoetbalTournamentAPI.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteTourney(int id)
         {
-            var tourney = _context.Tourney.FirstOrDefault(t => t.Id == id);
+            var tourney = _context.Tourney.Include(t => t.Matches).FirstOrDefault(t => t.Id == id);
             if (tourney == null)
             {
                 return NotFound();
             }
 
+            // Delete associated matches first
+            _context.Matches.RemoveRange(tourney.Matches);
             _context.Tourney.Remove(tourney);
             _context.SaveChanges();
             return NoContent();
@@ -86,7 +98,7 @@ namespace VoetbalTournamentAPI.Controllers
         [HttpGet("{id}/matches")]
         public IActionResult GetTourneyMatches(int id)
         {
-            var tourney = _context.Tourney.FirstOrDefault(t => t.Id == id);
+            var tourney = _context.Tourney.Include(t => t.Matches).FirstOrDefault(t => t.Id == id);
             if (tourney == null)
             {
                 return NotFound();
@@ -135,7 +147,8 @@ namespace VoetbalTournamentAPI.Controllers
 
             tourney.Matches = matches;
             _context.Matches.AddRange(matches);
-            _context.SaveChanges();
         }
     }
 }
+
+

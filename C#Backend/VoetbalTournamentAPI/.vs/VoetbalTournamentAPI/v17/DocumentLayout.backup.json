@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -92,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TeamsController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TeamsController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeamsController.cs",
@@ -100,18 +100,17 @@
               "RelativeToolTip": "Controllers\\TeamsController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAADwvzwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:47:10.93Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T08:47:10.93Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TourneyController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TourneyController.cs",
               "RelativeDocumentMoniker": "Controllers\\TourneyController.cs",
               "ToolTip": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TourneyController.cs",
               "RelativeToolTip": "Controllers\\TourneyController.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAADwv4wAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAowJoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T21:18:15.892Z",
               "EditorCaption": ""
@@ -136,7 +135,7 @@
               "RelativeDocumentMoniker": "Controllers\\MatchController.cs",
               "ToolTip": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\MatchController.cs",
               "RelativeToolTip": "Controllers\\MatchController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvzQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAADwvzwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T08:58:43.873Z",
               "EditorCaption": ""
