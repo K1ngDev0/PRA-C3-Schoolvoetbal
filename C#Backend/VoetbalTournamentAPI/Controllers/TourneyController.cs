@@ -45,8 +45,11 @@ namespace VoetbalTournamentAPI.Controllers
             }
 
             _context.Tourney.Add(newTourney);
+            _context.SaveChanges();
+
             GenerateMatches(newTourney);
             _context.SaveChanges();
+
             return CreatedAtAction(nameof(GetTourneyById), new { id = newTourney.Id }, newTourney);
         }
 
@@ -131,7 +134,8 @@ namespace VoetbalTournamentAPI.Controllers
             }
 
             tourney.Matches = matches;
+            _context.Matches.AddRange(matches);
+            _context.SaveChanges();
         }
     }
 }
-

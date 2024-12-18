@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using VoetbalTournamentAPI.Data;
 using VoetbalTournamentAPI.Model;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace VoetbalTournamentAPI.Controllers
@@ -59,4 +58,3 @@ namespace VoetbalTournamentAPI.Controllers
         }
     }
 }
-
