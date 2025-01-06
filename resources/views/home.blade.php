@@ -1,3 +1,5 @@
+<!-- resources/views/home.blade.php -->
+
 @extends('layouts.app')
 
 @section('content')
@@ -15,6 +17,16 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    @if (session('user.isAdmin'))
+                        <div class="alert alert-info" role="alert">
+                            {{ __('You are an admin!') }}
+                        </div>
+                    @else
+                        <div class="alert alert-info" role="alert">
+                            {{ __('You are a regular user!') }}
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
