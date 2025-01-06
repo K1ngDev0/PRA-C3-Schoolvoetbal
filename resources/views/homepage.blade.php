@@ -21,6 +21,20 @@
     </div>
 </div>
 
+@if (session('user.isAdmin'))
+    <div class="alert alert-info" role="alert">
+        {{ __('You are an admin!') }}<br>
+        {{ __('You are logged in as ') }} {{ session('user.name') }}<br>
+        {{ __('You have ') }} {{ session('user.money') }} {{ __(' money.') }}
+    </div>
+@elseif (session('user'))
+    <div class="alert alert-info" role="alert">
+        {{ __('You are a regular user!') }}
+        {{ __('You are logged in as ') }} {{ session('user.name') }}
+        {{ __('You have ') }} {{ session('user.money') }} {{ __(' money.') }}
+    </div>
+@endif
+
 <div class="container py-5" id="matches">
     <!-- Live wedstrijden sectie -->
     <div class="row justify-content-center">

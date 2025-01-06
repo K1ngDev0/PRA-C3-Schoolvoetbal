@@ -20,7 +20,7 @@
             </ul>
 
             <!-- Offcanvas menu knop rechts -->
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" 
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu"
                 style="border: 2px solid white; border-radius: 5px; color: white; padding: 5px 20px; background-color: transparent;">
                 Account
             </button>
@@ -35,12 +35,27 @@
             <div class="offcanvas-body">
                 <nav>
                     <ul class="list-unstyled">
-                        <li>
-                            <a href="{{ route('login') }}" class="text-decoration-none text-white">Login</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('register') }}" class="text-decoration-none text-white">Account aanmaken</a>
-                        </li>
+                        @if (session()->has('user'))
+                            <li>
+                                <a href="#" class="text-decoration-none text-white">{{ session('user.name') }}</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('logout') }}" class="text-decoration-none text-white"
+                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </li>
+                        @else
+                            <li>
+                                <a href="{{ route('login') }}" class="text-decoration-none text-white">Login</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('register') }}" class="text-decoration-none text-white">Account aanmaken</a>
+                            </li>
+                        @endif
                         <li>
                             <a href="/contact" class="text-decoration-none text-white">Contact</a>
                         </li>
