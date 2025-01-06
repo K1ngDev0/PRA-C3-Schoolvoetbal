@@ -52,9 +52,11 @@
                                 <div class="score">
                                     <span class="score-value">{{ $match['team1Score'] ?? '-' }}</span> - <span class="score-value">{{ $match['team2Score'] ?? '-' }}</span>
                                 </div>
-                                <div class="bet-button">
-                                    <button class="btn btn-primary">Uitbetalen</button>
-                                </div>
+                                @if (session()->has('user'))
+                                    <div class="bet-button">
+                                        <button class="btn btn-primary">Geld inzetten</button>
+                                    </div>
+                                @endif
                             </div>
                         @endforeach
                     </div>
@@ -81,9 +83,11 @@
                                 <div class="score">
                                     <span class="score-value">-</span>
                                 </div>
-                                <div class="bet-button">
-                                    <button class="btn btn-primary">Geld inzetten</button>
-                                </div>
+                                @if (session()->has('user'))
+                                    <div class="bet-button">
+                                        <button class="btn btn-primary">Geld inzetten</button>
+                                    </div>
+                                @endif
                             </div>
                         @endforeach
                     </div>
@@ -110,9 +114,11 @@
                                 <div class="score">
                                     <span class="score-value">{{ $match['team1Score'] ?? '-' }}</span> - <span class="score-value">{{ $match['team2Score'] ?? '-' }}</span>
                                 </div>
-                                <div class="bet-button">
-                                    <button class="btn btn-primary">Bekijk details</button>
-                                </div>
+                                @if (session()->has('user'))
+                                    <div class="bet-button">
+                                        <button class="btn btn-primary">Bekijk details</button>
+                                    </div>
+                                @endif
                             </div>
                         @endforeach
                     </div>
