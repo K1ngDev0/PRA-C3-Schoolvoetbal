@@ -1,3 +1,5 @@
+<!-- resources/views/homepage.blade.php -->
+
 @extends('layouts.base')
 
 @section('content')
@@ -28,18 +30,19 @@
                     <h5 class="card-title">Wedstrijden die bezig zijn</h5>
                     <p class="card-text">Hieronder vind je de wedstrijden die momenteel bezig zijn:</p>
                     <div class="match-list">
-                        <div class="match-item d-flex justify-content-between align-items-center py-3">
-                            <div class="team-info">
-                                <span class="team-name">Team A</span> vs <span class="team-name">Team B</span>
+                        @foreach ($ongoingMatches as $match)
+                            <div class="match-item d-flex justify-content-between align-items-center py-3">
+                                <div class="team-info">
+                                    <span class="team-name">{{ $match['team1']['name'] }}</span> vs <span class="team-name">{{ $match['team2']['name'] }}</span>
+                                </div>
+                                <div class="score">
+                                    <span class="score-value">{{ $match['team1Score'] ?? '-' }}</span> - <span class="score-value">{{ $match['team2Score'] ?? '-' }}</span>
+                                </div>
+                                <div class="bet-button">
+                                    <button class="btn btn-primary">Uitbetalen</button>
+                                </div>
                             </div>
-                            <div class="score">
-                                <span class="score-value">9 - 0</span>
-                            </div>
-                            <div class="bet-button">
-                                <button class="btn btn-primary">Uitbetalen</button>
-                            </div>
-                        </div>
-                        <!-- Voeg meer wedstrijden toe hier -->
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -56,18 +59,48 @@
                     <h5 class="card-title">Aankomende wedstrijden</h5>
                     <p class="card-text">Hieronder vind je de wedstrijden die binnenkort plaatsvinden:</p>
                     <div class="match-list">
-                        <div class="match-item d-flex justify-content-between align-items-center py-3">
-                            <div class="team-info">
-                                <span class="team-name">Team A</span> vs <span class="team-name">Team B</span>
+                        @foreach ($upcomingMatches as $match)
+                            <div class="match-item d-flex justify-content-between align-items-center py-3">
+                                <div class="team-info">
+                                    <span class="team-name">{{ $match['team1']['name'] }}</span> vs <span class="team-name">{{ $match['team2']['name'] }}</span>
+                                </div>
+                                <div class="score">
+                                    <span class="score-value">-</span>
+                                </div>
+                                <div class="bet-button">
+                                    <button class="btn btn-primary">Geld inzetten</button>
+                                </div>
                             </div>
-                            <div class="score">
-                                <span class="score-value">-</span>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Afgeronde wedstrijden sectie -->
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Afgeronde wedstrijden</h5>
+                    <p class="card-text">Hieronder vind je de wedstrijden die zijn afgelopen:</p>
+                    <div class="match-list">
+                        @foreach ($finishedMatches as $match)
+                            <div class="match-item d-flex justify-content-between align-items-center py-3">
+                                <div class="team-info">
+                                    <span class="team-name">{{ $match['team1']['name'] }}</span> vs <span class="team-name">{{ $match['team2']['name'] }}</span>
+                                </div>
+                                <div class="score">
+                                    <span class="score-value">{{ $match['team1Score'] ?? '-' }}</span> - <span class="score-value">{{ $match['team2Score'] ?? '-' }}</span>
+                                </div>
+                                <div class="bet-button">
+                                    <button class="btn btn-primary">Bekijk details</button>
+                                </div>
                             </div>
-                            <div class="bet-button">
-                                <button class="btn btn-primary">Geld inzetten</button>
-                            </div>
-                        </div>
-                        <!-- Voeg meer wedstrijden toe hier -->
+                        @endforeach
                     </div>
                 </div>
             </div>

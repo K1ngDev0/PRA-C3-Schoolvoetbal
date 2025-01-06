@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MatchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,7 @@ Route::get('/register', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/', [MatchController::class, 'index']);
 // Route::get('/matches', [App\Http\Controllers\MatchController::class, 'index'])->name('matches.index');
 
 Route::get('/matches', function () {
