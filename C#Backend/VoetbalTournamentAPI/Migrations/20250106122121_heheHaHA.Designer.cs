@@ -12,8 +12,8 @@ using VoetbalTournamentAPI.Data;
 namespace VoetbalTournamentAPI.Migrations
 {
     [DbContext(typeof(VoetbalTournamentDataContext))]
-    [Migration("20241217204847_NewTourneyTest2")]
-    partial class NewTourneyTest2
+    [Migration("20250106122121_heheHaHA")]
+    partial class heheHaHA
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
