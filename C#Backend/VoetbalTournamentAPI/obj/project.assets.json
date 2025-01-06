@@ -2740,11 +2740,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Unity Games\\School Exam\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\VoetbalTournamentAPI.csproj",
+      "projectUniqueName": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\VoetbalTournamentAPI.csproj",
       "projectName": "VoetbalTournamentAPI",
-      "projectPath": "D:\\Unity Games\\School Exam\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\VoetbalTournamentAPI.csproj",
+      "projectPath": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\VoetbalTournamentAPI.csproj",
       "packagesPath": "C:\\Users\\NZXT\\.nuget\\packages\\",
-      "outputPath": "D:\\Unity Games\\School Exam\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\obj\\",
+      "outputPath": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
