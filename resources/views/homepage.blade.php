@@ -36,8 +36,15 @@
 @endif
 
 <div class="container py-5" id="matches">
+
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-12 text-center">
+            <a href="{{ route('teams.create') }}" class="btn btn-primary">Create Team</a>
+        </div>
+    </div>
+
     <!-- Live wedstrijden sectie -->
-    <div class="row justify-content-center">
+    <div id="1" class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body text-center">
@@ -68,7 +75,7 @@
     <br>
 
     <!-- Aankomende wedstrijden sectie -->
-    <div class="row justify-content-center">
+    <div id="2" class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body text-center">
@@ -99,7 +106,7 @@
     <br>
 
     <!-- Afgeronde wedstrijden sectie -->
-    <div class="row justify-content-center">
+    <div id="3" class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body text-center">

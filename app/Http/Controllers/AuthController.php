@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Log;
@@ -30,7 +31,7 @@ class AuthController extends Controller
 
         if ($response->successful()) {
             $user = $response->json();
-            Session::put('user', $user);
+            Cookie::put('user', $user);
             return redirect()->route('home');
         }
 

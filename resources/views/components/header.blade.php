@@ -12,10 +12,13 @@
                     <a class="nav-link text-white" href="/">Homepage</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Wedstrijden van nu</a>
+                    <a class="nav-link text-white" href="#1">Wedstrijden van nu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Aankomende wedstrijden</a>
+                    <a class="nav-link text-white" href="#2">Aankomende wedstrijden</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#3">Afgeronde wedstrijden</a>
                 </li>
             </ul>
 

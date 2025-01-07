@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MatchController;
 use App\Http\Controllers\AuthController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,15 @@ Route::get('register', [AuthController::class, 'showRegisterForm'])->name('regis
 Route::post('register', [AuthController::class, 'register']);
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
+use App\Http\Controllers\TeamsController;
+
+Route::get('/teams/create', [TeamsController::class, 'showCreateForm'])->name('teams.create');
+Route::post('/teams/create', [TeamsController::class, 'create'])->name('teams.store');
+
+use App\Http\Controllers\TourneyController;
+
+Route::get('/tournaments/create', [TourneyController::class, 'showCreateForm'])->name('tournaments.create');
+Route::post('/tournaments/create', [TourneyController::class, 'create'])->name('tournaments.store');
 // Protected routes
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

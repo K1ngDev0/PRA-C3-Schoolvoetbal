@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\teamscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\tourneycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\matchcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\contexts\\voetbaltournamentdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:contexts\\voetbaltournamentdatacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5112D880-9909-45B8-8386-6ED6D4D2CB2F}|VoetbalTournamentAPI.csproj|c:\\laragon\\www\\pra-c3-schoolvoetbal\\c#backend\\voetbaltournamentapi\\model\\match.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,6 +83,10 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 18,
               "Title": "20250106122121_heheHaHA.cs",
@@ -96,33 +100,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TeamsController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TeamsController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeamsController.cs",
               "ToolTip": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TeamsController.cs",
               "RelativeToolTip": "Controllers\\TeamsController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAADwvzwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T08:47:10.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TourneyController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TourneyController.cs",
               "RelativeDocumentMoniker": "Controllers\\TourneyController.cs",
               "ToolTip": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\TourneyController.cs",
               "RelativeToolTip": "Controllers\\TourneyController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAwwIoAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T21:18:15.892Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -130,11 +134,12 @@
               "RelativeToolTip": "Controllers\\UserController.cs",
               "ViewState": "AgIAADgAAAAAAAAAAADwvygAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T09:10:31.929Z"
+              "WhenOpened": "2024-11-27T09:10:31.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MatchController.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Controllers\\MatchController.cs",
               "RelativeDocumentMoniker": "Controllers\\MatchController.cs",
@@ -142,8 +147,7 @@
               "RelativeToolTip": "Controllers\\MatchController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T08:58:43.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-18T08:58:43.873Z"
             },
             {
               "$type": "Document",
@@ -171,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "VoetbalTournamentDataContext.cs",
               "DocumentMoniker": "C:\\laragon\\www\\PRA-C3-Schoolvoetbal\\C#Backend\\VoetbalTournamentAPI\\Contexts\\VoetbalTournamentDataContext.cs",
               "RelativeDocumentMoniker": "Contexts\\VoetbalTournamentDataContext.cs",
@@ -179,8 +183,7 @@
               "RelativeToolTip": "Contexts\\VoetbalTournamentDataContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T09:37:29.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T09:37:29.937Z"
             },
             {
               "$type": "Document",
